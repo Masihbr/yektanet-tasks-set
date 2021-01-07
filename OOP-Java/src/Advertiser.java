@@ -14,6 +14,10 @@ public class Advertiser extends BaseAdvertising {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public static String help() {
         Field[] fields = Advertiser.class.getFields();
         StringBuilder fieldNames = new StringBuilder("");
