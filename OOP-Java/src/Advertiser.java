@@ -22,6 +22,16 @@ public class Advertiser extends BaseAdvertising {
     }
 
     public static String help() {
+        return "Advertiser{" +
+                +'\t' + "String name: contains name of the Advertiser" + '\n' +
+                +'\t' + "int id: a unique number to identify Advertiser" + '\n' +
+                +'\t' + "int clicks: contains number of clicks that Advertiser has received" + '\n' +
+                +'\t' + "int views: contains number of clicks that Advertiser has received" + '\n' +
+                '}';
+    }
+
+    /*  alternative help (if the fields are gonna change over time)
+    public static String help() {
         Field[] AdvertiserFields = Advertiser.class.getDeclaredFields();
         Field[] BaseAdvertisingFields = Advertiser.class.getSuperclass().getDeclaredFields();
         Field[] allFields = new Field[AdvertiserFields.length + BaseAdvertisingFields.length];
@@ -35,6 +45,7 @@ public class Advertiser extends BaseAdvertising {
         }
         return fieldNames.toString();
     }
+    */
 
     public static int getTotalClicks() {
         int totalClicks = 0;
@@ -45,7 +56,7 @@ public class Advertiser extends BaseAdvertising {
     }
 
     @Override
-    public String describeMe(){
+    public String describeMe() {
         return "Advertiser class";
     }
 }
