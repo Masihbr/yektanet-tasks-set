@@ -1,4 +1,4 @@
-# yektanet-tasks-set
+# yektanet Tasks Set
 Initial Yektanet tasks.
 
 ## Tasks
