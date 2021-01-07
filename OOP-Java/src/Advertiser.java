@@ -3,8 +3,11 @@ import java.lang.reflect.Field;
 public class Advertiser extends BaseAdvertising {
     private static int totalClicks;
     private String name;
-    private int clicks;
-    private int views;
+
+    public Advertiser(int id, String name) {
+        super(id, 0, 0);
+        this.name = name;
+    }
 
     public String getName() {
         return name;
