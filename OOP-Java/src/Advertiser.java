@@ -1,14 +1,16 @@
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Advertiser extends BaseAdvertising {
-    private static int totalClicks = 0;
+    private static ArrayList<Advertiser> advertisers = new ArrayList<>();
     private String name;
 
     public Advertiser(int id, String name) {
         super();
         this.id = id;
         this.name = name;
+        advertisers.add(this);
     }
 
     public String getName() {
@@ -17,17 +19,6 @@ public class Advertiser extends BaseAdvertising {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public void incClicks() {
-        clicks++;
-        totalClicks++;
-    }
-
-    @Override
-    public void incViews() {
-        views++;
     }
 
     public static String help() {
@@ -46,6 +37,10 @@ public class Advertiser extends BaseAdvertising {
     }
 
     public static int getTotalClicks() {
+        int totalClicks = 0;
+        for (Advertiser advertiser : advertisers) {
+            totalClicks += advertiser.getClicks();
+        }
         return totalClicks;
     }
 
