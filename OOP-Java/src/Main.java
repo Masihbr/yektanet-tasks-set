@@ -23,7 +23,7 @@ public class Main {
         print(ad1.getClicks());
         print(advertiser2.getClicks());
         print(Advertiser.getTotalClicks());
-        print(Advertiser.getTotalClicks());
+        print(Advertiser.help());
     }
 
     private static void print(Object o){
