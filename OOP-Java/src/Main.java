@@ -13,10 +13,10 @@ public class Main {
         ad1.incViews();
         ad1.incViews();
         ad1.incViews();
-        ad2.incViews(); //5 times
+        ad2.incViews();
         ad1.incClicks();
         ad1.incClicks();
-        ad2.incClicks(); //3 times
+        ad2.incClicks();
         print(advertiser2.getName());
         advertiser2.setName("new name");
         print(advertiser2.getName());
