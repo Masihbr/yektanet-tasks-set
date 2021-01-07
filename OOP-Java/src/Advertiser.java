@@ -1,6 +1,5 @@
-import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class Advertiser extends BaseAdvertising {
     private static ArrayList<Advertiser> advertisers = new ArrayList<>();
