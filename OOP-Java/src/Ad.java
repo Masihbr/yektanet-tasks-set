@@ -5,7 +5,8 @@ public class Ad extends BaseAdvertising {
     private Advertiser advertiser;
 
     public Ad(int id, String title, String imgUrl, String link, Advertiser advertiser) {
-        super(id, 0, 0);
+        super();
+        this.id = id;
         this.title = title;
         this.imgUrl = imgUrl;
         this.link = link;
