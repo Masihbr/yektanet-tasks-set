@@ -2,5 +2,5 @@
 Initial Yektanet tasks.
 
 ## Tasks
-- Git 
-- OOP
+1. Git 
+2. OOP - Java
