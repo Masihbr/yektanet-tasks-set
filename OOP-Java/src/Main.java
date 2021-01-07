@@ -6,6 +6,7 @@ public class Main {
         Advertiser advertiser2 = new Advertiser(2, "name2");
         Ad ad1 = new Ad(1, "title1", "img-url1", "link1", advertiser1);
         Ad ad2 = new Ad(2, "title2", "img-url2", "link2", advertiser2);
+
         print(baseAdvertising.describeMe());
         print(ad2.describeMe());
         print(advertiser1.describeMe());

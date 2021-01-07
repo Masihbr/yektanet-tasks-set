@@ -22,7 +22,7 @@ public class BaseAdvertising {
         views++;
     }
 
-    public String describeMe(){
+    public String describeMe() {
         return "BaseAdvertising class: superClass for Ad class and Advertiser class";
     }
 }

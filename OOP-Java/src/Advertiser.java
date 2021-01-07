@@ -22,10 +22,10 @@ public class Advertiser extends BaseAdvertising {
 
     public static String help() {
         return "Advertiser{" + '\n'
-                + "     " + "String name: contains name of the Advertiser" + '\n'
-                + "     " + "int id: a unique number to identify Advertiser" + '\n'
-                + "     " + "int clicks: contains number of clicks that Advertiser has received" + '\n'
-                + "     " + "int views: contains number of clicks that Advertiser has received" + '\n'
+                + "      " + "String name: contains name of the Advertiser" + '\n'
+                + "      " + "int id: a unique number to identify Advertiser" + '\n'
+                + "      " + "int clicks: contains number of clicks that Advertiser has received" + '\n'
+                + "      " + "int views: contains number of clicks that Advertiser has received" + '\n'
                 + '}';
     }
 
