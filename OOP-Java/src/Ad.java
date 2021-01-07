@@ -55,6 +55,6 @@ public class Ad extends BaseAdvertising {
 
     @Override
     public String describeMe(){
-        return "Ad class";
+        return "Ad class: contains Ads' info and their stats";
     }
 }

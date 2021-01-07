@@ -23,6 +23,6 @@ public class BaseAdvertising {
     }
 
     public String describeMe(){
-        return "BaseAdvertising class";
+        return "BaseAdvertising class: superClass for Ad class and Advertiser class";
     }
 }
