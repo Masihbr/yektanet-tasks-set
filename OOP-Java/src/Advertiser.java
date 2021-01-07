@@ -2,7 +2,7 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 
 public class Advertiser extends BaseAdvertising {
-    private static int totalClicks;
+    private static int totalClicks = 0;
     private String name;
 
     public Advertiser(int id, String name) {
@@ -17,6 +17,17 @@ public class Advertiser extends BaseAdvertising {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public void incClicks() {
+        clicks++;
+        totalClicks++;
+    }
+
+    @Override
+    public void incViews() {
+        views++;
     }
 
     public static String help() {
@@ -36,5 +47,10 @@ public class Advertiser extends BaseAdvertising {
 
     public static int getTotalClicks() {
         return totalClicks;
+    }
+
+    @Override
+    public String describeMe(){
+        return "Advertiser class";
     }
 }

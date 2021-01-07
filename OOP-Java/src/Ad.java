@@ -49,8 +49,8 @@ public class Ad extends BaseAdvertising {
         advertiser.incViews();
     }
 
+    @Override
     public String describeMe(){
         return "Ad class";
     }
-
 }
