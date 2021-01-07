@@ -1,30 +1,13 @@
 import java.lang.reflect.Field;
 
-public class Advertiser {
+public class Advertiser extends BaseAdvertising {
     private static int totalClicks;
-    private int id;
     private String name;
     private int clicks;
     private int views;
 
     public String getName() {
         return name;
-    }
-
-    public int getClicks() {
-        return clicks;
-    }
-
-    public int getViews() {
-        return views;
-    }
-
-    public void incClicks() {
-        clicks++;
-    }
-
-    public void incViews() {
-        views++;
     }
 
     public static String help() {
@@ -34,10 +17,6 @@ public class Advertiser {
             fieldNames.append(field.getType() + " " + field.getName() + "\n");
         }
         return fieldNames.toString();
-    }
-
-    public String describeMe(){
-        return "Advertiser class";
     }
 
     public static int getTotalClicks() {

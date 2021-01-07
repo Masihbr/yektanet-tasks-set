@@ -1,10 +1,7 @@
-public class Ad {
-    private int id;
+public class Ad extends BaseAdvertising {
     private String title;
     private String imgUrl;
     private String link;
-    private int clicks;
-    private int views;
     private Advertiser advertiser;
 
     public String getTitle() {
@@ -31,19 +28,13 @@ public class Ad {
         this.advertiser = advertiser;
     }
 
-    public int getClicks() {
-        return clicks;
-    }
-
-    public int getViews() {
-        return views;
-    }
-
+    @Override
     public void incClicks() {
         clicks++;
         advertiser.incClicks();
     }
 
+    @Override
     public void incViews() {
         views++;
         advertiser.incViews();
